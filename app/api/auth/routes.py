@@ -1,7 +1,7 @@
 from fastapi import APIRouter, HTTPException
 
 from app.core.schemas.auth import AuthSchema
-from app.api.auth.auth import start_authentication, refresh_authentication
+from app.api.auth import auth
 
 
 router = APIRouter(
@@ -13,8 +13,8 @@ router = APIRouter(
 @router.post("/start")
 def start(data: AuthSchema):
     try:
-        ret = start_authentication(data)
-        return ret
+        auth.start_authentication(data)
+        return {"status": "OK"}
     except Exception as err:
         print(err)
         raise HTTPException(status_code=500, detail="Erro interno no servidor")
@@ -22,7 +22,7 @@ def start(data: AuthSchema):
 @router.post("/refresh")
 def refresh(data: AuthSchema):
     try:
-        ret = refresh_authentication(data)
+        ret = auth.refresh_authentication(data)
         return ret
     except Exception as err:
         print(err)
