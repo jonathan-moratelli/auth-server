@@ -1,0 +1,20 @@
+{
+    "client": "Thunder Client",
+    "environmentName": "auth-server",
+    "dateExported": "2024-04-16T13:07:07.040Z",
+    "version": "1.0",
+    "variables": [
+        {
+            "name": "protocol",
+            "value": "http"
+        },
+        {
+            "name": "host",
+            "value": "127.0.0.1"
+        },
+        {
+            "name": "port",
+            "value": "8077"
+        }
+    ]
+}

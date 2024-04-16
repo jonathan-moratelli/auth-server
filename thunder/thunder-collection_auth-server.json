@@ -1,0 +1,62 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "auth-server",
+    "dateExported": "2024-04-16T13:10:16.274Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ef4b4095-836d-493d-bc1c-14ef87d919d8",
+            "colId": "ecc7fdd1-f5e8-4e4b-9395-f2ff1103a715",
+            "containerId": "",
+            "name": "Auth - Start",
+            "url": "{{protocol}}://{{host}}:{{port}}/auth/start",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-04-16T11:42:13.224Z",
+            "modified": "2024-04-16T12:52:35.771Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"key\": \"a970f7a6-9e17-4c18-84bd-d37fcb96e952\",\n  \"machine_id\": \"123456\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "71a270e3-cec2-424e-85e9-f1941028c4bd",
+            "colId": "ecc7fdd1-f5e8-4e4b-9395-f2ff1103a715",
+            "containerId": "",
+            "name": "License - Generate",
+            "url": "{{protocol}}://{{host}}:{{port}}/license",
+            "method": "POST",
+            "sortNum": 15000,
+            "created": "2024-04-16T12:50:37.519Z",
+            "modified": "2024-04-16T12:50:37.519Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "891e891e-a787-448b-9fda-df806e5069da",
+            "colId": "ecc7fdd1-f5e8-4e4b-9395-f2ff1103a715",
+            "containerId": "",
+            "name": "License - Get",
+            "url": "{{protocol}}://{{host}}:{{port}}/license?key=a970f7a6-9e17-4c18-84bd-d37fcb96e952",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-04-16T12:00:17.668Z",
+            "modified": "2024-04-16T12:36:45.746Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "key",
+                    "value": "a970f7a6-9e17-4c18-84bd-d37fcb96e952",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
