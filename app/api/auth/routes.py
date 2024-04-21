@@ -15,6 +15,9 @@ def start(data: AuthSchema):
     try:
         auth.start_authentication(data)
         return {"status": "OK"}
+    except ValueError as verr:
+        print(verr)
+        raise HTTPException(status_code=401, detail=str(verr))
     except Exception as err:
         print(err)
         raise HTTPException(status_code=500, detail="Erro interno no servidor")
@@ -22,8 +25,11 @@ def start(data: AuthSchema):
 @router.post("/refresh")
 def refresh(data: AuthSchema):
     try:
-        ret = auth.refresh_authentication(data)
-        return ret
+        auth.refresh_authentication(data)
+        return {"status": "OK"}
+    except ValueError as verr:
+        print(verr)
+        raise HTTPException(status_code=401, detail=str(verr))
     except Exception as err:
         print(err)
         raise HTTPException(status_code=500, detail="Erro interno no servidor")
