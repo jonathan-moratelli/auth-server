@@ -1,61 +1,74 @@
 {
     "client": "Thunder Client",
     "collectionName": "auth-server",
-    "dateExported": "2024-04-16T13:10:16.274Z",
+    "dateExported": "2024-04-21T21:34:19.863Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "ef4b4095-836d-493d-bc1c-14ef87d919d8",
-            "colId": "ecc7fdd1-f5e8-4e4b-9395-f2ff1103a715",
+            "_id": "f23dec8e-5984-4f3d-a665-54d20234c320",
+            "colId": "4c0c3ef5-527e-4e96-a6e3-911a53cd3c03",
             "containerId": "",
             "name": "Auth - Start",
             "url": "{{protocol}}://{{host}}:{{port}}/auth/start",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-04-16T11:42:13.224Z",
-            "modified": "2024-04-16T12:52:35.771Z",
+            "created": "2024-04-21T19:08:40.942Z",
+            "modified": "2024-04-21T21:31:55.632Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"key\": \"a970f7a6-9e17-4c18-84bd-d37fcb96e952\",\n  \"machine_id\": \"123456\"\n}",
+                "raw": "{\n  \"key\": \"f45b8c2f-a9c4-4d6a-a8cb-729b75ee8fba\",\n  \"machine_id\": \"123456\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "71a270e3-cec2-424e-85e9-f1941028c4bd",
-            "colId": "ecc7fdd1-f5e8-4e4b-9395-f2ff1103a715",
+            "_id": "e8ff2432-6dcd-4ef8-a923-ce688b6433e8",
+            "colId": "4c0c3ef5-527e-4e96-a6e3-911a53cd3c03",
+            "containerId": "",
+            "name": "Auth - Refresh",
+            "url": "{{protocol}}://{{host}}:{{port}}/auth/refresh",
+            "method": "POST",
+            "sortNum": 12500,
+            "created": "2024-04-21T21:32:12.138Z",
+            "modified": "2024-04-21T21:32:43.301Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"key\": \"f45b8c2f-a9c4-4d6a-a8cb-729b75ee8fba\",\n  \"machine_id\": \"999999\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "868dc879-bb78-4648-9d7d-ce33e803f4be",
+            "colId": "4c0c3ef5-527e-4e96-a6e3-911a53cd3c03",
             "containerId": "",
             "name": "License - Generate",
             "url": "{{protocol}}://{{host}}:{{port}}/license",
             "method": "POST",
             "sortNum": 15000,
-            "created": "2024-04-16T12:50:37.519Z",
-            "modified": "2024-04-16T12:50:37.519Z",
+            "created": "2024-04-21T19:08:40.944Z",
+            "modified": "2024-04-21T19:08:40.944Z",
             "headers": [],
             "params": [],
             "tests": []
         },
         {
-            "_id": "891e891e-a787-448b-9fda-df806e5069da",
-            "colId": "ecc7fdd1-f5e8-4e4b-9395-f2ff1103a715",
+            "_id": "f0e1e1fb-01e1-4bf7-b000-2b1ee07717f4",
+            "colId": "4c0c3ef5-527e-4e96-a6e3-911a53cd3c03",
             "containerId": "",
             "name": "License - Get",
-            "url": "{{protocol}}://{{host}}:{{port}}/license?key=a970f7a6-9e17-4c18-84bd-d37fcb96e952",
+            "url": "{{protocol}}://{{host}}:{{port}}/license",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-04-16T12:00:17.668Z",
-            "modified": "2024-04-16T12:36:45.746Z",
+            "created": "2024-04-21T19:08:40.943Z",
+            "modified": "2024-04-21T19:09:05.992Z",
             "headers": [],
-            "params": [
-                {
-                    "name": "key",
-                    "value": "a970f7a6-9e17-4c18-84bd-d37fcb96e952",
-                    "isPath": false
-                }
-            ],
+            "params": [],
             "tests": []
         }
     ]
